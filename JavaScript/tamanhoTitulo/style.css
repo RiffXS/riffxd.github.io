@@ -27,3 +27,8 @@ a {
   padding: 0.5em;
   margin-left: 0.5em;
 }
+
+button {
+  padding: 0.25em 0.75em;
+  margin-bottom: 0.5em;
+}
