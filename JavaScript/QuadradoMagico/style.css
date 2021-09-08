@@ -61,6 +61,12 @@ input {
   color: red;
 }
 
+.foradoslimites,
+.numerosrepetidos {
+  color: red;
+  border: solid 0.15em;
+}
+
 .vitoria tr td input {
   color: hsl(120, 100%, 44%);
 }
