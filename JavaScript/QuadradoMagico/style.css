@@ -48,6 +48,14 @@ input {
   color: hsl(0, 48%, 60%);
 }
 
+.somaerradalinhas,
+.somaerradacolunas,
+.somaerradadiagonalsecundaria,
+.somaerradadiagonalprincipal {
+  color: hsl(0, 48%, 60%);
+  border: solid 0.1em;
+}
+
 .foradoslimites input,
 .numerosrepetidos input {
   color: red;
@@ -55,6 +63,11 @@ input {
 
 .vitoria tr td input {
   color: hsl(120, 100%, 44%);
+}
+
+.vitoria tr td input {
+  color: hsl(120, 100%, 44%);
+  border: solid 0.05em;
 }
 
 /*==== LINKS ============================= */
