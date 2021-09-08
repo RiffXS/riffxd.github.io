@@ -3,6 +3,35 @@
   padding: 0;
 }
 
+a {
+  text-decoration: none;
+}
+
+.nav h2 {
+  font: 500 1rem 'DM Sans', sans-serif;
+  font-size: 2em;
+
+  margin-bottom: 0.5em;
+  margin-left: 5%;
+}
+
+.nav ul {
+  list-style: none;
+}
+
+.nav li {
+  font: 400 1.875rem 'Poppins', sans-serif;
+  font-size: 1.25em;
+
+  text-align: center;
+
+  margin-left: -65%;
+}
+
+.nav #ultimo {
+  margin-bottom: 2em;
+}
+
 #titulo {
   font-family: sans-serif;
   color: rgb(27, 47, 222);
