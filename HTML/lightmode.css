@@ -1,0 +1,50 @@
+body {
+    padding: 10px;
+    text-align: center;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+a {
+    text-decoration: none;
+}
+
+a:link {
+    color: blue;
+}
+
+a:hover {
+    color: rgb(66, 39, 110);
+}
+
+a:visited {
+    color: rgb(88, 50, 192);
+}
+
+h1 {    
+    font-size: 27.5px;
+}
+
+h2 {
+    font-size: 23.5px;
+}
+
+ul {
+    list-style-type: square;
+    text-align: left;
+}
+
+ol {
+    list-style-type: lower-latin;
+    text-align: left;
+}
+
+p {
+    font-size: 17.5px;
+}
+
+/* IDs */
+#darkmode {
+    float: right;
+    clear: left;
+    width: 150px;
+}

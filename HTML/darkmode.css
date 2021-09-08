@@ -1,0 +1,52 @@
+body {
+  color: #dfdfdf;
+  background-color: #1a1a1a;
+  padding: 10px;
+  text-align: center;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+a {
+  text-decoration: none;
+}
+
+a:link {
+  color: rgb(85, 110, 255);
+}
+
+a:hover {
+  color: rgb(175, 146, 255);
+}
+
+a:visited {
+  color: rgb(116, 66, 255);
+}
+
+h1 {
+  font-size: 27.5px;
+}
+
+h2 {
+  font-size: 23.5px;
+}
+
+ul {
+  list-style-type: circle;
+  text-align: left;
+}
+
+ol {
+  list-style-type: upper-roman;
+  text-align: left;
+}
+
+p {
+  font-size: 17.5px;
+}
+
+/* IDs */
+#lightmode {
+  float: right;
+  clear: left;
+  width: 150px;
+}

@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+
+<html lang="br">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        
+        <link rel="stylesheet" type="text/css" href="style.css" media="screen">
+        
+        <title>Rafael Barros Leão Borges</title>
+    </head>
+
+    <body>
+
+        <div>
+            <h1 id="titulo">Jogas Vídeo-Jogos?</h1>
+            <p id="subtitulo">Coloque suas informações</p>
+            <br>
+        </div>
+
+        <form>
+
+            <fieldset class="grupo">
+                <!-- Campo do nome com legenda "nome" e css de classe "campo" -->
+                <div class="campo">
+                    <label for="nome"><strong>Nome</strong></label>
+                    <input type="text" name="nome" id="nome" required>
+                </div>
+
+                <!-- Campo do sobrenome com legenda "sobrenome" e css de classe "campo" -->
+                <div class="campo">
+                    <label for="sobrenome"><strong>Sobrenome</strong></label>
+                    <input type="text" name="sobrenome" id="sobrenome" required>
+                </div>
+
+            </fieldset>
+            
+            <fieldset class="grupo">
+
+                <div class="campo">
+                    <label for="email"><strong>Email</strong></label>
+                    <input type="email" name="email" id="email" required>
+                </div>
+
+                <div class="campo">
+                    <label for="nascimento"><strong>Data de Nascimento</strong></label>
+                    <input type="date" name="nascimento", id="nascimento" required>
+                </div>
+
+            </fieldset>
+
+            <div class="campo">
+                <br>
+                <label><strong>Você joga?</strong></label>
+                <label>
+                    <input type="radio" name="jogas" id="sim">Sim
+                </label>
+                <label>
+                    <input type="radio" name="jogas" id="nao">Não
+                </label>
+            </div>
+
+            <br>
+
+            <div class="campo">
+                <label><strong>Qual é o seu prefirido?</strong></label>
+                <select id="jogo" required>
+                    <option selected disabled value="">Selecione</option>
+                    <option>Minecraft</option>
+                    <option>LoL</option>
+                    <option>CSGO</option>
+                    <option>Valorant</option>
+                    <option>Hollow Knight</option>
+                    <option>Osu</option>
+                </select>
+
+                <br>
+
+                <label for="outro"><strong>Outros</strong></label>
+                <input type="text" name="outro" id="outro">
+            </div>
+
+            <br>
+
+            <fieldset class="grupo">
+                <div class="check">
+                    <label><strong>Jogos que joga:</strong></label><br><br>
+                    <input type="checkbox" id="jogo1" name="jogo1" value="Minecraft">
+                    <label for="jogo1">Minecraft</label>
+                    <input type="checkbox" id="jogo2" name="jogo2" value="LoL">
+                    <label for="jogo2">Legue of Legends</label>
+                    <input type="checkbox" id="jogo3" name="jogo3" value="CSGO">
+                    <label for="jogo3">CSGO</label>
+                    <input type="checkbox" id="jogo4" name="jogo4" value="Valorant">
+                    <label for="jogo4">Valorant</label>
+                    <input type="checkbox" id="jogo5" name="jogo5" value="Osu">
+                    <label for="jogo5">Osu</label>
+                    <input type="checkbox" id="jogo6" name="jogo6" value="Outro">
+                    <label for="jogo6">Outro</label>
+                </div>
+            </fieldset>
+
+            <div class="campo">
+                <br><br>
+                <label for="experiencia"><strong>Qual sua experiência jogando?</strong></label>
+                <textarea style="width: 26em;" name="experiencia" id="experiencia" rows="6"></textarea>
+            </div>
+
+            <button type="submit" class="botao">Concluído</button>
+
+        </form>
+
+    </body>
+
+</html>
