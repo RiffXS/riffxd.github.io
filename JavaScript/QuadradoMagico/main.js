@@ -1,20 +1,45 @@
 // variáveis globais
-const ordem = 3
-const h2 = document.querySelector('h2')
-
-// criando matriz
-const matriz = Array(ordem)
-
-for (i = 0; i < matriz.length; i++) {
-  matriz[i] = Array(ordem)
-}
-
-const somaNumeros = 15
+let ordem = 0
+let matriz = []
+let somaNumeros = 0
 
 // chamando função quando página é carregada
 document.addEventListener('DOMContentLoaded', () => {
-  insereTabela()
+  quadradoMagico()
 })
+
+// vendo o tamanho do quadrado mágico
+function quadradoMagico() {
+  const div = document.createElement('div')
+  document.body.append(div)
+
+  const text = document.createElement('p')
+  text.innerText = 'Qual o tamanho do Quadrado Mágico?'
+  text.classList.add('textordem')
+  div.append(text)
+
+  const input = document.createElement('input')
+  input.classList.add('ordem')
+  div.append(input)
+
+  input.addEventListener('change', () => {
+    ordem = parseInt(input.value)
+
+    matriz = Array(ordem)
+
+    for (i = 0; i < matriz.length; i++) {
+      matriz[i] = Array(ordem)
+    }
+
+    somaNumeros = (ordem + ordem ** 3) / 2
+
+    div.remove()
+    text.remove()
+    input.remove()
+
+    insereTabela()
+  })
+}
 
 // inserindo tabela
 function insereTabela() {
@@ -43,6 +68,7 @@ function getLinhaColuna(celula) {
 // inserindo input
 function insereInput(celula) {
   const input = document.createElement('input')
+
   celula.append(input)
   input.addEventListener('change', () => {
     const valor = parseInt(input.value)
@@ -52,8 +78,12 @@ function insereInput(celula) {
 
     if (quadradoCompleto) {
       document.querySelector('#quadradomagico').classList.add('vitoria')
-    } else {
-      document.querySelector('#quadradomagico').classList.remove('vitoria')
+
+      document.querySelectorAll('input').forEach(input => {
+        input.readOnly = true
+      })
+      insereMensagemVitoria()
+      insereBotaoReset()
     }
   })
 }
@@ -274,4 +304,33 @@ function verificaSomaColuna(j) {
   }
 
   return true
+}
+
+function insereMensagemVitoria() {
+  const text = document.createElement('p')
+  text.innerText =
+    'Parabéns por ter concluído esse Quadrado Mágico! Eu até te daria um prêmio, mas sou apenas uma mensagem programada'
+
+  text.classList.add('parabenizacao')
+
+  document.body.append(text)
+}
+
+function insereBotaoReset() {
+  const reset = document.createElement('button')
+  reset.innerText = 'Reset'
+  reset.classList.add('reset')
+
+  document.body.append(reset)
+
+  reset.addEventListener('click', () => {
+    const text = document.querySelector('.parabenizacao')
+    const tabela = document.querySelector('#quadradomagico')
+
+    tabela.remove()
+    text.remove()
+    reset.remove()
+
+    quadradoMagico()
+  })
 }

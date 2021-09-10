@@ -40,6 +40,32 @@ input {
   font: larger;
 }
 
+/*==== ORDEM DO QUADRADO ================= */
+.ordem {
+  margin-top: 1em;
+  border-color: black;
+  border: solid 0.2em;
+}
+
+.textordem {
+  color: hsl(0, 0%, 0%);
+  font: 500 1.1em 'DM Sans', sans-serif;
+}
+
+/*==== PARABENIZACAO E RESET ============= */
+.parabenizacao {
+  font: 500 1rem 'DM Sans', sans-serif;
+  font-size: 1em;
+  margin-top: 0.75em;
+}
+
+.reset {
+  padding: 0.5em;
+  padding-left: 0.75em;
+  padding-right: 0.75em;
+  margin-top: 0.75em;
+}
+
 /*==== QUADRADOMAGICO ==================== */
 .somaerradalinhas input,
 .somaerradacolunas input,
@@ -77,15 +103,14 @@ input {
 }
 
 /*==== LINKS ============================= */
-h2 {
-  font: 500 1rem 'DM Sans', sans-serif;
+.titulo {
+  font: 700 1rem 'DM Sans', sans-serif;
   font-size: 2em;
   padding: 0.25em;
 }
 
 a {
-  font: 400 1.875rem 'Poppins', sans-serif;
-  font-size: 1.25em;
+  font: 400 1.25rem 'Poppins', sans-serif;
 
   padding: 0.5em;
   margin-left: 0.5em;
